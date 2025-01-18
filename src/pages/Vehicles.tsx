@@ -1,6 +1,6 @@
 function Vehicles() {
     return (
-        <div className="container" style={{ marginTop: '64px' }}>
+        <div className="container" style={{ marginTop: '20px' }}>
             {/* Card Section */}
             <div className="row justify-content-center">
                 <div className="col-md-6">
@@ -14,8 +14,13 @@ function Vehicles() {
                                     {/* First Column: 6 out of 12 */}
                                     <div className="col-md-6">
                                         <div className="mb-3">
-                                            <label htmlFor="inputField1" className="form-label">Input Field 1</label>
-                                            <input type="text" className="form-control" id="inputField1"/>
+                                            <label htmlFor="inputField4" className="form-label">Input Field 4</label>
+                                            <select className="form-select" id="inputField4">
+                                                <option value="">Select an Option</option>
+                                                <option value="option1">Option 1</option>
+                                                <option value="option2">Option 2</option>
+                                                <option value="option3">Option 3</option>
+                                            </select>
                                         </div>
                                         <div className="mb-3">
                                             <label htmlFor="inputField1" className="form-label">Input Field 1</label>
@@ -103,10 +108,9 @@ function Vehicles() {
                                 <td>@johndoe</td>
                                 <td>johndoe@example.com</td>
                                 <td>
-                                    <td>
+
                                         <button className="btn btn-sm btn-warning mx-2">Edit</button>
                                         <button className="btn btn-sm btn-danger mx-2">Delete</button>
-                                    </td>
 
                                 </td>
                             </tr>
@@ -117,10 +121,8 @@ function Vehicles() {
                                 <td>@janesmith</td>
                                 <td>janesmith@example.com</td>
                                 <td>
-                                    <td>
                                         <button className="btn btn-sm btn-warning mx-2">Edit</button>
                                         <button className="btn btn-sm btn-danger mx-2">Delete</button>
-                                    </td>
 
                                 </td>
                             </tr>
@@ -131,10 +133,10 @@ function Vehicles() {
                                 <td>@paulwalker</td>
                                 <td>paulwalker@example.com</td>
                                 <td>
-                                    <td>
+
                                         <button className="btn btn-sm btn-warning mx-2">Edit</button>
                                         <button className="btn btn-sm btn-danger mx-2">Delete</button>
-                                    </td>
+
 
                                 </td>
                             </tr>

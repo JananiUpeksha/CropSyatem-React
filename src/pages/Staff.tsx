@@ -1,8 +1,6 @@
-import React from 'react';
-
 function Staff() {
     return (
-        <div className="container" style={{ marginTop: '64px' }}>
+        <div className="container" style={{ marginTop: '20px' }}>
             {/* Card Section */}
             <div className="row justify-content-center">
                 <div className="col-md-6">
@@ -16,51 +14,54 @@ function Staff() {
                                     {/* First Column: 6 out of 12 */}
                                     <div className="col-md-6">
                                         <div className="mb-3">
-                                            <label htmlFor="inputField1" className="form-label">Input Field 1</label>
+                                            <label htmlFor="inputField4" className="form-label">Select Staff</label>
+                                            <select className="form-select" id="inputField4">
+                                                <option value="">Select an ID</option>
+                                                <option value="option1">Option 1</option>
+                                                <option value="option2">Option 2</option>
+                                                <option value="option3">Option 3</option>
+                                            </select>
+                                        </div>
+                                        <div className="mb-3">
+                                            <label htmlFor="inputField1" className="form-label">First Name</label>
                                             <input type="text" className="form-control" id="inputField1"/>
                                         </div>
                                         <div className="mb-3">
-                                            <label htmlFor="inputField1" className="form-label">Input Field 1</label>
+                                            <label htmlFor="inputField1" className="form-label">Address</label>
                                             <input type="text" className="form-control" id="inputField1"/>
                                         </div>
                                         <div className="mb-3">
-                                            <label htmlFor="inputField3" className="form-label">Input Field 3</label>
+                                            <label htmlFor="inputField3" className="form-label">Contact</label>
                                             <input type="text" className="form-control" id="inputField3"/>
                                         </div>
                                         <div className="mb-3">
-                                            <label htmlFor="inputField5" className="form-label">Input Field 5</label>
-                                            <input type="text" className="form-control" id="inputField5"/>
+                                            <label htmlFor="startDate" className="form-label">Start Date</label>
+                                            <input type="date" className="form-control" id="startDate"/>
                                         </div>
                                     </div>
 
                                     {/* Second Column: 6 out of 12 */}
                                     <div className="col-md-6">
                                         <div className="mb-3">
-                                            <label htmlFor="inputField2" className="form-label">Input Field 2</label>
-                                            {/* Replaced input with a button */}
+                                            <label htmlFor="inputField2" className="form-label">Search</label>
                                             <button type="button" className="btn btn-primary w-100"
-                                                    id="inputField2">Button
+                                                    id="inputField2">Search
                                             </button>
                                         </div>
                                         <div className="mb-3">
-                                            <label htmlFor="inputField2" className="form-label">Input Field 2</label>
+                                            <label htmlFor="inputField2" className="form-label">Last Name</label>
                                             <input type="text" className="form-control" id="inputField2"/>
                                         </div>
-
-                                        {/* Dropdown for Input Field 4 */}
                                         <div className="mb-3">
-                                            <label htmlFor="inputField4" className="form-label">Input Field 4</label>
-                                            <select className="form-select" id="inputField4">
-                                                <option value="">Select an Option</option>
-                                                <option value="option1">Option 1</option>
-                                                <option value="option2">Option 2</option>
-                                                <option value="option3">Option 3</option>
-                                            </select>
+                                            <label htmlFor="inputField2" className="form-label">E-mail</label>
+                                            <input type="text" className="form-control" id="inputField2"/>
                                         </div>
-
-                                        {/* Dropdown for Input Field 6 */}
                                         <div className="mb-3">
-                                            <label htmlFor="inputField6" className="form-label">Input Field 6</label>
+                                            <label htmlFor="endDate" className="form-label">Birth Day</label>
+                                            <input type="date" className="form-control" id="endDate"/>
+                                        </div>
+                                        <div className="mb-3">
+                                            <label htmlFor="inputField6" className="form-label">Role</label>
                                             <select className="form-select" id="inputField6">
                                                 <option value="">Select an Option</option>
                                                 <option value="optionA">Option A</option>
@@ -73,9 +74,8 @@ function Staff() {
 
                                 {/* Buttons */}
                                 <div className="d-flex justify-content-center gap-3 mt-3">
-                                    <button type="submit" className="btn btn-primary">Submit</button>
-                                    <button type="button" className="btn btn-secondary">Cancel</button>
-                                    <button type="button" className="btn btn-danger">Reset</button>
+                                    <button type="submit" className="btn btn-primary">Save</button>
+                                    <button type="button" className="btn btn-secondary">Clear</button>
                                 </div>
                             </form>
                         </div>
@@ -95,7 +95,7 @@ function Staff() {
                                 <th scope="col">Last Name</th>
                                 <th scope="col">Username</th>
                                 <th scope="col">Email</th>
-                                <th scope="col">Action</th>
+                                <th scope="col">Actions</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -106,49 +106,11 @@ function Staff() {
                                 <td>@johndoe</td>
                                 <td>johndoe@example.com</td>
                                 <td>
-                                    <button className="btn btn-sm btn-danger">Delete</button>
+                                    <button className="btn btn-sm btn-warning mx-2">Edit</button>
+                                    <button className="btn btn-sm btn-danger mx-2">Delete</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jane</td>
-                                <td>Smith</td>
-                                <td>@janesmith</td>
-                                <td>janesmith@example.com</td>
-                                <td>
-                                    <button className="btn btn-sm btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Paul</td>
-                                <td>Walker</td>
-                                <td>@paulwalker</td>
-                                <td>paulwalker@example.com</td>
-                                <td>
-                                    <button className="btn btn-sm btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Michael</td>
-                                <td>Johnson</td>
-                                <td>@michaelj</td>
-                                <td>michaelj@example.com</td>
-                                <td>
-                                    <button className="btn btn-sm btn-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Susan</td>
-                                <td>Williams</td>
-                                <td>@susanwilliams</td>
-                                <td>susanwilliams@example.com</td>
-                                <td>
-                                    <button className="btn btn-sm btn-danger">Delete</button>
-                                </td>
-                            </tr>
+                            {/* More rows... */}
                             </tbody>
                         </table>
                     </div>
